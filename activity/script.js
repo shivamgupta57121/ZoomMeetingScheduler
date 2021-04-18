@@ -15,7 +15,7 @@ async function letsWait() {
 }
 
 async function waitAndClick(selector, newTab) {
-    await newTab.waitForTimeout(3000);
+    await newTab.waitForTimeout(1000);
     await newTab.waitForSelector(selector, { visible: true });
     // not wait for this promise since we want calling function to await this promise
     let selectorClickPromise = newTab.click(selector);
@@ -56,6 +56,7 @@ function blockingWait(seconds) {
     // fs.writeFileSync("cookies.js", JSON.stringify(cookiePage));
 
     console.log("Login done using cookies");
+    await zoomTab.waitForTimeout(3000);
     await waitAndClick(".schedule-meeting", zoomTab);
     let url = zoomTab.url();
 

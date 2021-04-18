@@ -1,26 +1,26 @@
 module.exports = {
     meeting: [{
-            startTime: "10:00",
+            startTime: "8:00",
             amOrPm: "PM",
-            durationHour: "4",
+            durationHour: "2",
             durationMin: "00",
-            topic: "PAB",
+            topic: "Batch - 1",
             batchEmail: 'shivamgupta9118551@gmail.com'
         },
         {
-            startTime: "3:00",
+            startTime: "10:00",
             amOrPm: "PM",
-            durationHour: "4",
-            durationMin: "00",
-            topic: "PP Batch - 2",
+            durationHour: "1",
+            durationMin: "30",
+            topic: "Batch - 2",
             batchEmail: 'amulyarock9@gmail.com'
         },
         {
-            startTime: "7:00",
+            startTime: "11:30",
             amOrPm: "PM",
-            durationHour: "4",
-            durationMin: "00",
-            topic: "PP Batch - 1",
+            durationHour: "2",
+            durationMin: "45",
+            topic: "Batch - 3",
             batchEmail: 'ajaygupta57121@gmail.com'
         }
     ]
